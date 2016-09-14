@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+int t;
+scanf("%d",&t);
+int i;
+for(i=0;i<t;i++)
+{
+char a[100],b[100];
+scanf("%s",a);
+scanf("%s",b);
+int j,k,c=0;
+int flag;
+for(j=0;a[j]!='\0';j++)
+{ flag=1;
+for(k=0;b[k]!='\0';k++)
+{
+if(a[j]==b[k])
+{
+flag=0;
+}
+}
+if(flag==0)
+c++;
+}
+printf("%d\n",c);
+}
+return 0;
+}
